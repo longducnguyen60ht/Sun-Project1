@@ -1,0 +1,61 @@
+@media only screen and (max-width: 619px) and (min-width:414px)
+{
+    html
+    {
+        font-size: 11px;
+    }
+    .header__navBut__text
+    {
+        display: none;
+    }
+    .header__imdbpro
+    {
+        display: none;
+    }
+    .header__watchList
+    {
+        display: none;
+    }
+    .header__search
+    {
+        width: 50%;
+    }
+    .pd-main
+    {
+        padding: 0 1%;
+    }
+    .header__logo
+    {
+    width: 10%;
+    height: 90%;
+    }
+    .header__search
+    {
+        display: none;
+    }
+    .xMasTree
+    {
+        display: none;
+    }
+    .main__subTrailer
+    {
+        display: none;
+    }
+    .main__trailer__slider-big
+    {
+        width: 100%;
+        height: 45vh;
+    }
+    .trailer__slider-big__img
+    {
+        width: 25%;
+    }
+    .main__trailer
+    {
+        height: 55vh;
+    }
+    .main__trailer 
+    {
+        padding-top: 8vh;
+    }
+}

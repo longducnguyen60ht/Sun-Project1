@@ -1,0 +1,166 @@
+/* 
+FONT COLOR = fc-['color']
+*/
+.fc-black
+{
+    color: black;
+}
+.fc-white
+{
+    color: white;
+}
+.fc-silver
+{
+    color: silver;
+}
+.fc-green
+{
+    color: green;
+}
+.fc-yellow
+{
+    color: yellow;
+}
+/* 
+////////////////////
+    END FONT COLOR
+////////////////////
+*/
+/* 
+    FONT WEIGHT
+*/
+.fw-bold
+{
+    font-weight: bold;
+}
+/* 
+////////////////////
+    END FONT WEIGHT
+////////////////////
+*/
+
+
+/* 
+BACKGROUND COLOR = bg-['color']
+ */
+ .bg-black
+ {
+    background-color: black;
+ }
+ .bg-white
+ {
+    background-color: white;
+ }
+ .bg-yellow
+ {
+    background-color: yellow;
+ }
+/*
+ ///////////////////
+    END BACKGROUND COLOR
+ /////////////////// 
+*/
+/*
+    PADDING   
+ */
+ .pd-header
+ {
+    padding: 0 5%;
+ }
+ .pdr-10px
+ {
+    padding-right: 10px;
+ }
+ .pd-main
+ {
+    padding: 8vh 5% 4vh 5%;
+ }
+/*
+/////////////////////
+    END PADDING
+///////////////////// 
+*/
+/*
+    display = d-[value] 
+ */
+ .d-flex
+ {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+ }
+ .d-none
+ {
+    display: none;
+ }
+ .d-grid
+ {
+    display: -ms-grid;
+    display: -moz-grid;
+    display: grid;
+ }
+ .d-block
+ {
+    display: block;
+ }
+/*
+/////////////////////
+ END DISPLAY
+/////////////////////
+*/
+/*
+    Align 
+*/
+.aI-center
+{
+    align-items: center;
+}
+.aS-center
+{
+    align-self: center;
+}
+/*
+/////////////////////
+    END ALIGN
+///////////////////// 
+*/
+/*
+    position
+*/
+.p-fixed
+{
+    position: fixed;
+}
+/*
+/////////////////////
+    END ALIGN
+///////////////////// 
+*/
+/*
+    border
+*/
+.bdr-main
+{
+    border-radius: 10px;
+}
+.bd-none
+{
+    border: none;
+}
+/*
+/////////////////////
+    END border
+///////////////////// 
+*/
+/*
+    justify
+*/
+.jc-center{
+    justify-content: center;
+}
+/*
+/////////////////////
+    END justify
+///////////////////// 
+*/

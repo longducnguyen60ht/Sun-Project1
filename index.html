@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="/CSS/fontawesome-free-6.2.1-web/css/all.min.css" class="css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="/CSS/reset.css" class="css">
+        <link rel="stylesheet" href="/CSS/style.css">
+        <link rel="stylesheet" href="/CSS/css module/module.css">
+        <link rel="stylesheet" href="/CSS/ipad-respon.css">
+        <link rel="stylesheet" href="/CSS/ipxr-respon.css">
+        <title>IMDb Noel ver</title>
+        <link rel="shortcut icon" href="/recourse/logoTitle.ico">
+    </head>
+    <body>
+        <!-- header trang web -->
+        <header class="bg-black pd-header d-flex aI-center p-fixed fc-white">
+            <i class="xMasTree bi bi-tree-fill fc-green"></i>
+            <section class="header__logo d-flex">
+                <img class="header__logo__img aS-center" src="/recourse/logo-imdb.png" alt="IMDb header logo">
+            </section>
+            <section class="header__navBut fc-white d-flex aI-center">
+                <label for="navBut-checked-open" class="header__navBut-btn d-flex aI-center jc-center">
+                    <i class="header__navBut__icon fa-solid fa-bars"></i>
+                    <p class="header__navBut__text">Menu</p>
+                </label>
+                <input class="d-none" type="radio" name="navBut-checked" id="navBut-checked-open">
+                <input class="d-none" type="radio" name="navBut-checked" id="navBut-checked-close">
+                <nav class="header__nav">
+                    <section class="header__nav__heading d-flex ">
+                        <img class="nav__heading__logo" src="/recourse/logo-imdb.png" alt="IMDb navigation logo">
+                        <label for="navBut-checked-close" class="header__nav__close fa-regular fa-circle-xmark"></label>
+                    </section>
+                    <section class="header__nav__link d-grid">
+                        <div class="link__contain">
+                            <h3 class="link__contain__heading"><span class="pdr-10px"><i class="fa-solid fa-arrow-trend-up"></i></span>Trending</h3>
+                            <a class="link__contain__anchor d-block fc-white" href="#">Best of 2022</a>
+                            <a class="link__contain__anchor d-block fc-white" href="#">Top 250 Movies</a>
+                            <a class="link__contain__anchor d-block fc-white" href="#">Most Popular Movies</a>
+                            <a class="link__contain__anchor d-block fc-white" href="#">Top 250 TV Shows</a>
+                            <a class="link__contain__anchor d-block fc-white" href="#">Most Popular TV Shows</a>
+                            <a class="link__contain__anchor d-block fc-white" href="#">Most Popular Video Games</a>
+                            <a class="link__contain__anchor d-block fc-white" href="#">Most Popular Music Videos</a>
+                            <a class="link__contain__anchor d-block fc-white" href="#">Most Popular Podcasts</a>
+                        </div>
+                        <div class="link__contain">
+                            <h3 class="link__contain__heading"><span class="pdr-10px"><i class="fa-solid fa-tv"></i></span>TV Shows</h3>
+                            <a class="link__contain__anchor d-block fc-white" href="#">What's on TV & Streaming</a>
+                            <a class="link__contain__anchor d-block fc-white" href="#">Browse TV Show by genre</a>
+                            <a class="link__contain__anchor d-block fc-white" href="#">TV News</a>
+                            <a class="link__contain__anchor d-block fc-white" href="#">Indie TV Spotlight</a>
+                        </div>
+                        <div class="link__contain">
+                            <h3 class="link__contain__heading"><span class="pdr-10px"><i class="fa-solid fa-star"></i></span>Adwards & Events</h3>
+                            <a class="link__contain__anchor d-block fc-white" href="#">Oscars</a>
+                            <a class="link__contain__anchor d-block fc-white" href="#">Best Picture Winners</a>
+                            <a class="link__contain__anchor d-block fc-white" href="#">Emmys</a>
+                            <a class="link__contain__anchor d-block fc-white" href="#">STARmester Adwards</a>
+                            <a class="link__contain__anchor d-block fc-white" href="#">San Diago Comic-Con</a>
+                            <a class="link__contain__anchor d-block fc-white" href="#">Newyork Comic-Con</a>
+                            <a class="link__contain__anchor d-block fc-white" href="#">Sundance Film Festival</a>
+                            <a class="link__contain__anchor d-block fc-white" href="#">Toronto Int'l Film Festival</a>
+                            <a class="link__contain__anchor d-block fc-white" href="#">Awards Central</a>
+                            <a class="link__contain__anchor d-block fc-white" href="#">Festival Central</a>
+                            <a class="link__contain__anchor d-block fc-white" href="#">All events</a>
+                        </div>
+                        <div class="link__contain">
+                            <h3 class="link__contain__heading"><span class="pdr-10px"><i class="fa-solid fa-film"></i></span>Movies</h3>
+                            <a class="link__contain__anchor d-block fc-white" href="#">Release Calendar</a>
+                            <a class="link__contain__anchor d-block fc-white" href="#">Browse Movies By genre</a>
+                            <a class="link__contain__anchor d-block fc-white" href="#">Top Box Office</a>
+                            <a class="link__contain__anchor d-block fc-white" href="#">Showtimes & Tickets</a>
+                            <a class="link__contain__anchor d-block fc-white" href="#">Movies News</a>
+                            <a class="link__contain__anchor d-block fc-white" href="#">Indie Movies Spotlight</a>
+                        </div>
+                        <div class="link__contain">
+                            <h3 class="link__contain__heading"><span class="pdr-10px"><i class="fa-solid fa-square-caret-right"></i></span>Watch</h3>
+                            <a class="link__contain__anchor d-block fc-white" href="#">What to Watch</a>
+                            <a class="link__contain__anchor d-block fc-white" href="#">Latest Trailers</a>
+                            <a class="link__contain__anchor d-block fc-white" href="#">IMDb Originals</a>
+                            <a class="link__contain__anchor d-block fc-white" href="#">IMDb Picks</a>
+                            <a class="link__contain__anchor d-block fc-white" href="#">IMDb Podcasts</a>
+                        </div>
+                    </section>
+                </nav>
+            </section>
+            <section class="header__search d-flex bg-white bdr-main">
+                <select class="header__search__select bd-none" name="select-scoped ">
+                    <option class="search__select__option" value="All Scoped">All</option>
+                    <option class="search__select__option" value="Tittles Scoped">Tittles</option>
+                    <option class="search__select__option" value="TV Eposodes Scoped">TV Eposodes</option>
+                    <option class="search__select__option" value="Celebs Scoped">Celebs</option>
+                    <option class="search__select__option" value="Companies Scoped">Companies</option>
+                    <option class="search__select__option" value="Keywords Scoped">Keywords</option>
+                    <option class="search__select__option" value="">Advanced Search</option>
+                </select>
+                <form class="header__search__form d-flex">
+                    <input class="search__form__keywords bd-none" type="text" placeholder="Search IMDb">
+                    <button class="header__search__btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </section>
+            <section class="header__imdbpro d-flex">
+                <img src="/recourse/IMDbPro.jpg" alt="IMDb Pro logo">
+                <div class="header__imdbpro__desc">
+                    <div class="imdbpro__desc__imgCon">
+                        <img src="/recourse/imdbpro-des.png" alt="IMDb desc image">
+                    </div>
+                    <div class="imdbpro__desc__content fc-white">
+                        <h3 class="desc__content__heading fc-yellow" title="IMDbpro desc content title">The essential resource for entertainment professional</h3>
+                        <div class="desc__content__list d-grid">
+                            <li>Find industry contacts & talent representation</li>
+                            <li>Access in-development titles not available on IMDb</li>
+                            <li>Get the latest news from leading industry trades</li>
+                            <li>Claim your page and control your brand across IMDb & Amazon</li>
+                        </div>
+                        <button class="desc__content__btn bg-yellow">Try IMDb Pro free</button>
+                    </div>
+                </div>
+            </section>
+            <section class="header__watchList d-flex aI-center">
+                <i class="header__watchList__icon bi bi-bookmark-plus-fill"></i>
+                <p class="header__watchList__text fw-bold">Watchlist</p>
+                <div class="watchList__text__count fc-black">2</div>
+            </section>
+            <section class="header__profile d-flex">
+                <div class="header__profile-up d-grid">
+                    <i class="header__profile__icon bi bi-person-circle"></i>
+                    <p class="header__profile__name">Long</p>
+                    <i class="bi bi-caret-down-fill"></i>
+                </div>
+                <div class="header__profile-down">
+                    <li class="profile-down__list">Your activity</li>
+                    <li class="profile-down__list">Your watchlist</li>
+                    <li class="profile-down__list">Your ratings</li>
+                    <li class="profile-down__list">Your lists</li>
+                    <li class="profile-down__list">Account settings</li>
+                    <li class="profile-down__list">Sign out</li>
+                </div>
+            </section>
+            <section class="header__lang d-grid aI-center">
+                <p class="header__lang__text">EN</p>
+                <i class="header__lang__icon bi bi-caret-down-fill"></i>
+            </section> 
+        </header>
+
+        <!--  Main -->
+
+
+        <main class="bg-black">
+            <section class="main__trailer pd-main d-flex">
+                <input class="videoSp d-none" type="radio" name="trailerRun" id="trailer-runTGF">
+                <input class="videoSp d-none" type="radio" name="trailerRun" id="trailer-closeTGF">
+                <input class="videoSp d-none" type="radio" name="trailerRun" id="trailer-runTHD">
+                <input class="videoSp d-none" type="radio" name="trailerRun" id="trailer-closeTHD">
+                <input class="videoSp d-none" type="radio" name="trailerRun" id="trailer-runMaverick">
+                <input class="videoSp d-none" type="radio" name="trailerRun" id="trailer-closeMaverick">
+                <input class="videoSp d-none" type="radio" name="trailerRun" id="trailer-runYourname">
+                <input class="videoSp d-none" type="radio" name="trailerRun" id="trailer-closeYourname">
+                <div class="videoholder videoTGF fc-white">
+                    <video class="myvideo" src="/recourse/trailer video/THE GODFATHER _ 50th Anniversary Trailer _ Paramount Pictures.mp4" controls></video>
+                    <label class="trailer-close" for="trailer-closeTGF"><i class="bi bi-x"></i>Close</label>
+                </div>
+                <div class="videoholder videoTHD fc-white">
+                    <video class="myvideo" src="/recourse/trailer video/House of the Dragon _ Official Trailer _ HBO Max.mp4"  controls></video>
+                    <label  class="trailer-close" for="trailer-closeTHD"><i class="bi bi-x"></i>Close</label>
+                </div>
+                <div class="videoholder videoMaverick fc-white">
+                    <video class="myvideo" src="/recourse/trailer video/Top Gun_ Maverick _ NEW Official Trailer (2022 Movie) - Tom Cruise.mp4"  controls></video>
+                    <label  class="trailer-close" for="trailer-closeMaverick"><i class="bi bi-x"></i>Close</label>
+                </div>
+                <div class="videoholder videoYourname fc-white">
+                    <video class="myvideo" src="/recourse/trailer video/Kimi no Na wa (Your Name) Trailer.mp4"  controls></video>
+                    <label  class="trailer-close" for="trailer-closeYourname"><i class="bi bi-x"></i>Close</label>
+                </div>
+                <input class="big-slideSp" type="radio" name="big-slideSp" checked id="big-slideSp">
+                <input class="big-slideSp" type="radio" name="big-slideSp" id="big-slideSp1">
+                <input class="big-slideSp" type="radio" name="big-slideSp" id="big-slideSp2">
+                <input class="big-slideSp" type="radio" name="big-slideSp" id="big-slideSp3">
+                <input class="big-slideSp" type="radio" name="big-slideSp" id="big-slideSp4">
+                <input class="big-slideSp" type="radio" name="big-slideSp" id="big-slideSp5">
+                <input class="big-slideSp" type="radio" name="big-slideSp" id="big-slideSp6">
+                <input class="big-slideSp" type="radio" name="big-slideSp" id="big-slideSp7">
+                <input class="big-slideSp" type="radio" name="big-slideSp" id="big-slideSp8">
+                <div class="main__trailer__slider-big d-flex">
+                    <div class="trailer__slider-big__holder d-flex">
+                        <div class="slider-big__holder-slide big__holder-slide1">
+                            <img class="trailer__slider-big__img" src="/recourse/film img/theGodfather.jpg">
+                            <label class="big__holder-slide__btn holder-slide__btn-left fc-white" for="big-slideSp1"><i class="bi bi-caret-left-fill"></i></label>
+                            <label class="big__holder-slide__btn holder-slide__btn-right fc-white" for="big-slideSp2"><i class="bi bi-caret-right-fill"></i></label>
+                            <img class="big__holder-slide__img-lil" src="/recourse/film img/theGodfatherLittle.jpg">
+                            <div class="big__holder-slide__desc d-grid">
+                                <section class="holder-slide__desc-playbtn">
+                                    <label for="trailer-runTGF"><i class="holder-slide__desc-playbtn fa-regular fa-circle-play"></i></label>
+                                </section>
+                                <section class="holder-slide__desc-text">
+                                    <h2 class="holder-slide__desc-text-title">The Godfather I</h2>
+                                    <p class="holder-slide__desc-text-desc">1972 - R - 2h 55m</p>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="slider-big__holder-slide">
+                            <img class="trailer__slider-big__img" src="/recourse/film img/houseOfDragon.jpg">
+                            <label class="big__holder-slide__btn holder-slide__btn-left fc-white" for="big-slideSp3"><i class="bi-caret-left-fill"></i></label>
+                            <label class="big__holder-slide__btn holder-slide__btn-right fc-white" for="big-slideSp4"><i class="bi bi-caret-right-fill"></i></label>
+                            <img class="big__holder-slide__img-lil" src="/recourse/film img/houseOfDragonLittle.jpg">
+                            <div class="big__holder-slide__desc d-grid">
+                                <section class="holder-slide__desc-playbtn">
+                                    <label for="trailer-runTHD"><i class="holder-slide__desc-playbtn fa-regular fa-circle-play"></i></label>
+                                </section>
+                                <section class="holder-slide__desc-text">
+                                    <h2 class="holder-slide__desc-text-title">House of Dragon</h2>
+                                    <p class="holder-slide__desc-text-desc">TV Series - 2022 – TV-MA</p>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="slider-big__holder-slide">
+                            <img class="trailer__slider-big__img" src="/recourse/film img/maverick.jpeg">
+                            <label class="big__holder-slide__btn holder-slide__btn-left fc-white" for="big-slideSp5"><i class="bi bi-caret-left-fill"></i></label>
+                            <label class="big__holder-slide__btn holder-slide__btn-right fc-white" for="big-slideSp6"><i class="bi bi-caret-right-fill"></i></label>
+                            <img class="big__holder-slide__img-lil" src="/recourse/film img/maverickLitltle.jpg">
+                            <div class="big__holder-slide__desc d-grid">
+                                <section class="holder-slide__desc-playbtn">
+                                    <label for="trailer-runMaverick"><i class="holder-slide__desc-playbtn fa-regular fa-circle-play"></i></label>
+                                </section>
+                                <section class="holder-slide__desc-text">
+                                    <h2 class="holder-slide__desc-text-title">Top gun : Maverick</h2>
+                                    <p class="holder-slide__desc-text-desc">2022 - PG-13 - 2h 10m</p>
+                                </section>
+                            </div>
+                        </div>
+                        <div class="slider-big__holder-slide">
+                            <img class="trailer__slider-big__img" src="/recourse/film img/yourName.jpg">
+                            <label class="big__holder-slide__btn holder-slide__btn-left fc-white" for="big-slideSp7"><i class="bi bi-caret-left-fill"></i></label>
+                            <label class="big__holder-slide__btn holder-slide__btn-right fc-white" for="big-slideSp8"><i class="bi-caret-right-fill"></i></label>
+                            <img class="big__holder-slide__img-lil" src="/recourse/film img/yourNameLittle.jpg">
+                            <div class="big__holder-slide__desc d-grid">
+                                <section class="holder-slide__desc-playbtn">
+                                    <label for="trailer-runYourname">  <i class="holder-slide__desc-playbtn fa-regular fa-circle-play"></i></label>
+                                </section>
+                                <section class="holder-slide__desc-text">
+                                    <h2 class="holder-slide__desc-text-title">Your Name</h2>
+                                    <p class="holder-slide__desc-text-desc">Original title: Kimi no Na wa<br>
+                                        2016 - TV-PG - 1h 46m</p>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__subTrailer">
+                    <h2 class="main__subTrailer__heading">Up next</h2>
+                    <div class="main__subTrailer__slider">
+                        <div class="main__subTrailer__slider-holder">
+                            <input class="big-slideSp" type="radio" name="sub-slideSp" checked id="dub-slideSp">
+                            <input class="big-slideSp" type="radio" name="sub-slideSp" id="sub-slideSp1">
+                            <section class="subTrailer__slider-holder__slide subTrailer-slide1">
+                                <img class="subTrailer__slider__slide-img" src="/recourse/film img/houseOfDragonLittle.jpg">
+                                <div class="subTrailer__slider__slide-desc">
+
+                                    <i class="fa-regular fa-circle-play fc-yellow"></i>
+                                    <h4>House of Dragon</h4>   
+                                    <p>TV Series - 2022 – TV-MA</p>                    
+                                </div>
+                            </section>
+                            <section class="subTrailer__slider-holder__slide">
+                                <img class="subTrailer__slider__slide-img" src="/recourse/film img/maverickLitltle.jpg">
+                                <div class="subTrailer__slider__slide-desc">
+
+                                    <i class="fa-regular fa-circle-play fc-yellow"></i>
+                                    <h4>Top gun : Maverick</h4>
+                                    <p>2022 - PG-13 - 2h 10m</p>       
+                                </div>
+                            </section>
+                            <section class="subTrailer__slider-holder__slide">
+                                <img class="subTrailer__slider__slide-img" src="/recourse/film img/yourNameLittle.jpg">
+                                <div class="subTrailer__slider__slide-desc">
+
+                                    <i class="fa-regular fa-circle-play fc-yellow"></i>
+                                    <h4>Your name</h4>
+                                    <p>Original title: Kimi no Na wa.</p>       
+                                </div>
+                            </section>
+                            <section class="subTrailer__slider-holder__slide">
+                                <img class="subTrailer__slider__slide-img" src="/recourse/film img/theGodfatherLittle.jpg">
+                                <div class="subTrailer__slider__slide-desc">
+
+                                    <i class="fa-regular fa-circle-play fc-yellow"></i>
+                                    <h4>The Godfather</h4>  
+                                    <p>1972 - R - 2h 55m</p>     
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__featuredtoday pd-main">
+                <h2 class="main__featuredtoday__heading main__section__heading">Featured today</h2>
+                <div class="main__featuredtoday__content d-flex">
+                    <div class="holder d-grid">
+                        <input type="radio" name="feat-slide" id="feat-left">
+                        <input type="radio" name="feat-slide" id="feat-right">
+                        <div class="inside inside1 d-grid">
+                            <label class="meleft" for="feat-left"><i class="featured-icon bi bi-chevron-left"></i></label>
+                            <label class="meright" for="feat-right"><i class="featured-icon bi bi-chevron-right"></i></label>
+                            <div>
+                                <img src="/recourse/film img/222.jpeg" alt="">
+                                <p>25+ Best Thriller Movies </p>
+                            </div>
+                            <div>
+                                <img src="/recourse/film img/333.jpg" alt="">
+                                <p>IMDb's top rared English movies that you can watch</p>
+                            </div>
+                        </div>
+                        <div class="inside d-grid">
+                            <label class="meleft" for="feat-left"><i class="featured-icon left-featured bi bi-chevron-left"></i></label>
+                            <label class="meright" for="feat-right"><i class="featured-icon bi bi-chevron-right"></i></label>
+                           <div>
+                                <img src="/recourse/film img/111.jpg" alt="">
+                                <p>IMDb Announced Top 10 Films of 2022</p>
+                            </div>
+                            <div>
+                                <img src="/recourse/film img/444.jpg" alt="">
+                                <p>Top 10 Most Rated Films </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main__whattowatch pd-main">
+                <h2 class="main__whattowatch__heading main__section__heading">What to Watch</h2>
+                <div class="main__whattowatch__content">
+                    <div class="whattowatch__content__slide-holder d-grid">
+                        <div class="whattowatch__content__slider d-grid fc-white">
+                            <div class="whattowatch__content__slide d-grid">
+                                <img class="whattowatch__content__slide-img" src="/recourse/film img/klaus.jpg">
+                                <div class="whattowatch__content__slide-desc">
+                                    <div class ="content__slide-desc_rated d-flex">
+                                        <p class="content__slide-desc-star"><i class="fa-solid fa-star fc-yellow"></i>7.3</p>
+                                        <label for="main__whattowatch__rating-open" class="content__slide-desc__rated-rate"><i class="fa-regular fa-star"></i></label>
+                                    </div>
+                                    <h4 class="content__slide-desc__heading">Klaus</h4>
+                                    <button class="content__slide-desc__add">+ Watchlist</button>
+                                    <div class="content__slide-desc__info d-flex">
+                                        <p><i class="slide-desc__info-play fa-solid fa-caret-right"></i>Trailer</p>
+                                        <p><i class="bi bi-info-circle"></i></p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="whattowatch__content__slide d-grid">
+                                <img class="whattowatch__content__slide-img" src="/recourse/film img/blackadam.jpg">
+                                <div class="whattowatch__content__slide-desc">
+                                    <div class ="content__slide-desc_rated d-flex">
+                                        <p class="content__slide-desc-star"><i class="fa-solid fa-star fc-yellow"></i>6.8</p>
+                                        <label for="main__whattowatch__rating-open" class="content__slide-desc__rated-rate"><i class="fa-regular fa-star"></i></label>
+                                    </div>
+                                    <h4 class="content__slide-desc__heading">Black Adam</h4>
+                                    <button class="content__slide-desc__add">+ Watchlist</button>
+                                    <div class="content__slide-desc__info d-flex">
+                                        <p><i class="slide-desc__info-play fa-solid fa-caret-right"></i>Trailer</p>
+                                        <p><i class="bi bi-info-circle"></i></p>
+                                    </div>
+                                </div
+                                >
+                            </div>
+                            <div class="whattowatch__content__slide d-grid">
+                                <img class="whattowatch__content__slide-img" src="/recourse/film img/homealone.jpg">
+                                <div class="whattowatch__content__slide-desc">
+                                    <div class ="content__slide-desc_rated d-flex">
+                                        <p class="content__slide-desc-star"><i class="fa-solid fa-star fc-yellow"></i>7.5</p>
+                                        <label for="main__whattowatch__rating-open" class="content__slide-desc__rated-rate"><i class="fa-regular fa-star"></i></label>
+                                    </div>
+                                    <h4 class="content__slide-desc__heading">Home Alone</h4>
+                                    <button class="content__slide-desc__add">+ Watchlist</button>
+                                    <div class="content__slide-desc__info d-flex">
+                                        <p><i class="slide-desc__info-play fa-solid fa-caret-right"></i>Trailer</p>
+                                        <p><i class="bi bi-info-circle"></i></p>
+                                    </div>
+                                </div
+                                >
+                            </div>
+                            <div class="whattowatch__content__slide d-grid">
+                                <img class="whattowatch__content__slide-img" src="/recourse/film img/thewhale.jpg">
+                                <div class="whattowatch__content__slide-desc">
+                                    <div class ="content__slide-desc_rated d-flex">
+                                        <p class="content__slide-desc-star"><i class="fa-solid fa-star fc-yellow"></i>6.4</p>
+                                        <label for="main__whattowatch__rating-open" class="content__slide-desc__rated-rate"><i class="fa-regular fa-star"></i></label>
+                                    </div>
+                                    <h4 class="content__slide-desc__heading">The Whale</h4>
+                                    <button class="content__slide-desc__add">+ Watchlist</button>
+                                    <div class="content__slide-desc__info d-flex">
+                                        <p><i class="slide-desc__info-play fa-solid fa-caret-right"></i>Trailer</p>
+                                        <p><i class="bi bi-info-circle"></i></p>
+                                    </div>
+                                </div
+                                >
+                            </div>
+                            <div class="whattowatch__content__slide d-grid">
+                                <img class="whattowatch__content__slide-img" src="/recourse/film img/joker.jpg">
+                                <div class="whattowatch__content__slide-desc">
+                                    <div class ="content__slide-desc_rated d-flex">
+                                        <p class="content__slide-desc-star"><i class="fa-solid fa-star fc-yellow"></i>8.6</p>
+                                        <label for="main__whattowatch__rating-open" class="content__slide-desc__rated-rate"><i class="fa-regular fa-star"></i></label>
+                                    </div>
+                                    <h4 class="content__slide-desc__heading">Joker</h4>
+                                    <button class="content__slide-desc__add">+ Watchlist</button>
+                                    <div class="content__slide-desc__info d-flex">
+                                        <p><i class="slide-desc__info-play fa-solid fa-caret-right"></i>Trailer</p>
+                                        <p><i class="bi bi-info-circle"></i></p>
+                                    </div>
+                                </div
+                                >
+                            </div>
+                            <div class="whattowatch__content__slide d-grid">
+                                <img class="whattowatch__content__slide-img" src="/recourse/film img/spirited.jpg">
+                                <div class="whattowatch__content__slide-desc">
+                                    <div class ="content__slide-desc_rated d-flex">
+                                        <p class="content__slide-desc-star"><i class="fa-solid fa-star fc-yellow"></i>7.0</p>
+                                        <label for="main__whattowatch__rating-open" class="content__slide-desc__rated-rate"><i class="fa-regular fa-star"></i></label>
+                                    </div>
+                                    <h4 class="content__slide-desc__heading">Spirited</h4>
+                                    <button class="content__slide-desc__add">+ Watchlist</button>
+                                    <div class="content__slide-desc__info d-flex">
+                                        <p><i class="slide-desc__info-play fa-solid fa-caret-right"></i>Trailer</p>
+                                        <p><i class="bi bi-info-circle"></i></p>
+                                    </div>
+                                </div
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="whattowatch__content__slide-holder">
+                        <div class="whattowatch__content__slider d-grid">
+                            <div class="whattowatch__content__slide d-grid">
+                                <img class="whattowatch__content__slide-img" src="">
+                                <div class="whattowatch__content__slide-desc">
+                                </div> 
+                            </div>
+                            <div class="whattowatch__content__slide d-grid">
+                                <img class="whattowatch__content__slide-img" src="">
+                                <div class="whattowatch__content__slide-desc">
+                                </div>
+                            </div>
+                            <div class="whattowatch__content__slide d-grid">
+                                <img class="whattowatch__content__slide-img" src="">
+                                <div class="whattowatch__content__slide-desc">
+                                </div>
+                            </div>
+                            <div class="whattowatch__content__slide d-grid">
+                                <img class="whattowatch__content__slide-img" src="">
+                                <div class="whattowatch__content__slide-desc">
+                                </div>
+                            </div>
+                            <div class="whattowatch__content__slide d-grid">
+                                <img class="whattowatch__content__slide-img" src="">
+                                <div class="whattowatch__content__slide-desc">
+                                </div>
+                            </div>
+                            <div class="whattowatch__content__slide d-grid">
+                                <img class="whattowatch__content__slide-img" src="">
+                                <div class="whattowatch__content__slide-desc">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input class="d-none" type="radio" name="main__whattowatch__rating" id="main__whattowatch__rating-open">
+                <input class="d-none" type="radio" name="main__whattowatch__rating" id="main__whattowatch__rating-close">
+                <div class="main__whattowatch__rating">
+                    <div class="whattowatch__rating__box">
+                        <input  class="d-none" type="radio" name ="starip"id="starinput1"><input class="d-none" type="radio" name ="starip"id="starinput1"><input class="d-none" type="radio" name ="starip"id="starinput1"><input class="d-none" type="radio" name ="starip"id="starinput1"><input class="d-none" type="radio" name ="starip"id="starinput1"><input class="d-none" type="radio" name ="starip"id="starinput1"><input class="d-none" type="radio" name ="starip"id="starinput1"><input class="d-none" type="radio" name ="starip"id="starinput1"><input class="d-none" type="radio" name ="starip"id="starinput1"><input class="d-none" type="radio" name ="starip"id="starinput1">
+                        <h4 class="whattowatch__rating__heading fc-yellow">Rate this</h4>
+                        <label class="rating__star" for=""><label for="starinput1" class="star10 bi bi-star"></label><label for="starinput1" class="star9 bi bi-star"></label><label for="starinput1" class="star8 bi bi-star"></label><label for="starinput1" class="star7 bi bi-star"></label><label for="starinput1" class="star6 bi bi-star"></label><label for="starinput1" class="star5 bi bi-star"></label><label for="starinput1" class="star4 bi bi-star"></label><i class="star3 bi bi-star"></i><label for="starinput1" class="star2 bi bi-star"></label><label for="starinput1" class="star1 bi bi-star"></label></label>
+                        <label for="main__whattowatch__rating-close" class="rating__btn" for="">rate</label>
+                    </div>
+                </div>
+            </section>
+            <section class="main__borntoday pd-main">
+                <h2 class="main__section__heading">Born today</h2>
+                <div class="main__borntoday__content ">
+                    <input class="d-none" type="radio" name="borntoday-slidesp" id="borntoday-left">
+                    <input class="d-none" type="radio" name="borntoday-slidesp" id="borntoday-right">
+                    <div class="borntoday__content__slideholder d-grid">
+    
+                        <div class="borntoday__content__slide borntoday__slide1 d-grid fc-white">
+                            <img src="/recourse/actor img/brendan.jpg" alt="">
+                            <img src="/recourse/actor img/elainehendrix.jpg" alt="">
+                            <img src="/recourse/actor img/georgge.jpg" alt="">
+                            <img src="/recourse/actor img/hannahtoin.jpg" alt="">
+                            <img src="/recourse/actor img/Joe Manganiello.jpg" alt="">
+                            <img src="/recourse/actor img/mackenzie.jpg" alt="">
+                            <p>Brendan Hines<br>46</p>
+                            <p>Elaine Hendrix<br>52</p>
+                            <p>George Blagden<br>33</p>
+                            <p>Hannah Toin<br>35</p>
+                            <p>Joe Manganiello<br>46</p>
+                            <p>Mackenzie Rosman<br>33</p>
+                            <label class="left-born" for="borntoday-left"><i class="featured-icon bi bi-chevron-left"></i></label>
+                            <label class="right-born" for="borntoday-right"><i class="featured-icon bi bi-chevron-right"></i></label>
+                        </div>
+                        <div class="borntoday__content__slide d-grid fc-white">
+                            <img src="/recourse/actor img/martinmilner.jpg" alt="">
+                            <img src="/recourse/actor img/nichelle.jpg" alt="">
+                            <img src="/recourse/actor img/pilla.jpg" alt="">
+                            <img src="/recourse/actor img/stanlee.jpg" alt="">
+                            <img src="/recourse/actor img/thomasdekker.jpg" alt="">
+                            <img src="/recourse/actor img/vanessaferlito.jpg" alt="">
+                            <p>Martin Milner<br>1931-2015</p>
+                            <p>Nichelle Nichols<br>1932-2022</p>
+                            <p>Pilla Fogllati<br>30</p>
+                            <p>Stan Lee<br>1922-2018</p>
+                            <p>Thosmas Dekkler<br>35</p>
+                            <p>Vanessa Ferlito<br>45</p>
+                            <label class="left-born" for="borntoday-left"><i class="featured-icon bi bi-chevron-left"></i></label>
+                            <label class="right-born" for="borntoday-right"><i class="featured-icon bi bi-chevron-right"></i></label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="social">
+                <a href=""><i class="bi bi-tiktok"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-youtube"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+            </div>
+            <div class="footer__lists d-flex jc-center">
+                <div class="footer__list">
+                    <a href="">Get the IMDb App</a>
+                    <a href="">Help</a>
+                    <a href="">Site Index</a>
+                    <a href="">IMDb Pro</a>
+                    <a href="">Box Office Mojo</a>
+                    <a href="">IMDb Developer</a>
+                    <a href="">Press Room</a>
+                    <a href="">Advertising</a>
+                    <a href="">Jobs</a>
+                    <a href="">Conditions of Use</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Your Ads Privacy Choices</a>
+    
+                </div>
+            </div>
+            <div class="footer__logo d-flex jc-center">
+                <img src="/recourse/amazon.png" alt="">
+            </div>
+        </footer>
+    </body>
+</html>
